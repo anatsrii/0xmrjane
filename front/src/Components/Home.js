@@ -14,20 +14,20 @@ function Home() {
     <Container width="xl" className='container' >
 
       {/* Left box */}
-      <Box className='box' >
+      <Box className='box1' >
 
         {/* Image */}
       <Avatar 
         alt="profile"
         src="profilecorp.png"
-        sx={{ width: 480, height: 540 }}
+        className='avarta'
       />
       </Box>
 
       {/* Right Box Menu */}
-      <Box className='box' >
+      <Box className='box2' >
         <h1>0xMrJane</h1>
-        <p>FULL STACK DEVELOPER</p>
+        <p>ANAT SRISAPUTH</p>
         <p><Button className='button'>PORTFOLIO</Button></p>
         <p><Button className='button'>PROJECTS</Button></p>
         <p><Button className='button' onClick={()=> window.open('https://github.com/anatsrii')}>GITHUB</Button></p>

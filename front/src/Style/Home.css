@@ -1,27 +1,6 @@
-.container{
-  display: inline-flex !important;
-  height: 100vh;
-  background-color: #0060AD;
+body {
+  background-color: #0064ad;
   font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 500;
-
-}
-
-.box {
-  width: 480px;
-   height: 540px;
-   align-items: 'center';
-   justify-content: 'center';
-   text-align: center;
-   color: #ffffff ;
-   border: solid #ffffff;
-   margin-top: 15vh;
-}
-
-p {
-  font-weight: 700;
-  margin: 30px;
 }
 
 .button {
@@ -30,3 +9,57 @@ p {
   border: solid #ffffff 1px !important;
   width: 75% ;
 }
+
+@media only screen and (max-width: 769px) {
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    display: flex;
+    height: 100vh;
+    font-style: normal;
+    font-weight: 500;
+  }
+  h1 {
+    font-size: x-large;
+  }
+
+  p {
+    font-weight: 700;
+    margin: 25px;
+  }
+
+  .avarta {
+    width: 240px !important;
+    height: 240px !important;
+    text-align: center !important;
+    left: 3rem;
+    top: 0.5rem;
+  }
+  .box1 {
+    max-width: 375px;
+    max-height: 50%;
+     align-items: 'center' !important;
+     justify-content: 'center' !important;
+  }
+  .box2 {
+    max-width: 375px;
+    max-height: 50%;
+     align-items: 'center';
+     justify-content: 'center';
+     text-align: center;
+     color: #ffffff ;
+     border: solid #ffffff;
+     margin-bottom: 3rem;
+  }
+
+
+}
+
+
+
+
+
+
+
