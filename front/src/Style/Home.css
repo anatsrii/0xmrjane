@@ -1,0 +1,32 @@
+.container{
+  display: inline-flex !important;
+  height: 100vh;
+  background-color: #0060AD;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+
+}
+
+.box {
+  width: 480px;
+   height: 540px;
+   align-items: 'center';
+   justify-content: 'center';
+   text-align: center;
+   color: #ffffff ;
+   border: solid #ffffff;
+   margin-top: 15vh;
+}
+
+p {
+  font-weight: 700;
+  margin: 30px;
+}
+
+.button {
+  color: #ffffff !important;
+  font-weight: 500;
+  border: solid #ffffff 1px !important;
+  width: 75% ;
+}
