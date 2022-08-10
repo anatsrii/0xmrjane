@@ -3,23 +3,21 @@ body {
   font-family: "Roboto","Helvetica","Arial",sans-serif;
 }
 
-.button {
-  color: #ffffff !important;
-  font-weight: 500;
-  border: solid #ffffff 1px !important;
-  width: 75% ;
-}
 
-@media only screen and (max-width: 769px) {
-  body {
-    justify-content: center;
-    align-items: center;
+@media only screen and (max-width: 480px) {
+  .button {
+    color: #ffffff !important;
+    font-weight: 500;
+    border: solid #ffffff 1px !important;
+    width: 75% ;
   }
+
   .container{
-    display: flex;
     height: 100vh;
     font-style: normal;
     font-weight: 500;
+    text-align: center;
+    color: #ffffff;
   }
   h1 {
     font-size: x-large;
@@ -31,27 +29,27 @@ body {
   }
 
   .avarta {
-    width: 240px !important;
-    height: 240px !important;
+    width: 200px !important;
+    height: 200px !important;
     text-align: center !important;
-    left: 3rem;
-    top: 0.5rem;
   }
   .box1 {
     max-width: 375px;
-    max-height: 50%;
-     align-items: 'center' !important;
-     justify-content: 'center' !important;
+    height: 30%;
+    align-items: 'center' !important;
+    justify-content: 'center' !important;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .box2 {
     max-width: 375px;
-    max-height: 50%;
+    height: 70%;
      align-items: 'center';
      justify-content: 'center';
      text-align: center;
      color: #ffffff ;
      border: solid #ffffff;
-     margin-bottom: 3rem;
+     margin-bottom: 1rem;
   }
 
 

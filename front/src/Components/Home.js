@@ -1,7 +1,5 @@
-import { Button } from '@mui/material';
+import { Button, Grid } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
 import '../Style/Home.css';
 
 
@@ -11,10 +9,10 @@ function Home() {
   
   return (
     // Main container
-    <Container width="xl" className='container' >
+    <Grid container justifyContent='center' alignItems='center' className='container'> 
 
       {/* Left box */}
-      <Box className='box1' >
+      <Grid className='box1' >
 
         {/* Image */}
       <Avatar 
@@ -22,10 +20,10 @@ function Home() {
         src="profilecorp.png"
         className='avarta'
       />
-      </Box>
+      </Grid>
 
       {/* Right Box Menu */}
-      <Box className='box2' >
+      <Grid row >
         <h1>0xMrJane</h1>
         <p>ANAT SRISAPUTH</p>
         <p><Button className='button'>PORTFOLIO</Button></p>
@@ -33,8 +31,8 @@ function Home() {
         <p><Button className='button' onClick={()=> window.open('https://github.com/anatsrii')}>GITHUB</Button></p>
         <p><Button className='button'>CONTACT ME</Button></p>
         <p><Button className='button'>MY BLOG</Button></p>
-      </Box>
-    </Container>
+      </Grid>
+    </Grid>
   )
 }
 
