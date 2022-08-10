@@ -6,6 +6,7 @@ import Home from './Components/Home';
 import Portfolio from './Components/Portfolio';
 import Projects from './Components/Projects';
 import NoPage from './Components/NoPage';
+import Blog from './Components/Blog';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='portfolio' element={<Portfolio/>} />
         <Route path='projects' element={<Projects/>} />
         <Route path='contact' element={<Contact/>} />
+        <Route path='blog' element={<Blog/>} />
         <Route path='*' element={<NoPage/>} />
       </Routes>
     </div>
