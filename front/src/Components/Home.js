@@ -1,9 +1,6 @@
-import Button from "@mui/material/Button";
-import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import { Link } from "react-router-dom";
 import "../Style/Home.css";
-import { Box } from "@mui/material";
+import { Box, Button, Container, Avatar } from "@mui/material";
 
 function Home() {
   return (
