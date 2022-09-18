@@ -1,0 +1,29 @@
+{
+  "name": "0xmrjane",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "back": "cd back && nodemon server.js ",
+    "front": "cd front && npm start",
+    "dev": "concurrently \"npm run back\" \"npm run front\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anatsrii/0xmrjane.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anatsrii/0xmrjane/issues"
+  },
+  "homepage": "https://github.com/anatsrii/0xmrjane#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "concurrently": "^7.4.0",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1"
+  }
+}

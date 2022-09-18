@@ -219,4 +219,15 @@ body {
      color: #ffffff ;
      margin: auto;
   }
+
+  .button.MuiButtonBase-root:hover {
+    background-color: #ffffff;
+    color: #0064ad !important;
+    font-weight: 800 !important;
+    font-size: xx-large;
+    border: solid #ffffff 1px !important;
+    width: 75% !important;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
 }
