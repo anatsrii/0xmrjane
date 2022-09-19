@@ -1,3 +1,4 @@
+import '../Style/App.css';
 import { Container, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 import { Box } from '@mui/system';
 import { useEffect, useState } from 'react';
@@ -26,6 +27,16 @@ function Exchange() {
     getMenu();
   }, [selectMenuTop,selectMenuBottom]);
 
+  const onChangeTopMenu = (e) => {
+    setSelectMenuTop(e.target.value)
+    setExchangeValueBottom((exchangeValueTop * exchangeRate).toFixed(2))
+  }
+
+  const onChangeBottomMenu = (e) => {
+    setSelectMenuBottom(e.target.value)
+    setExchangeValueTop((exchangeValueBottom / exchangeRate).toFixed(2))
+  }
+
   const exchangeTop = (e) => {
     console.log(e.target.value);
     let topValue = e.target.value;
@@ -43,7 +54,7 @@ function Exchange() {
     setExchangeValueBottom(bottomValue);
     // bottom value / Exchange rates  = top value
     setExchangeValueTop((bottomValue / exchangeRate).toFixed(2))
-    console.log('bottom * top');
+    
   }
 
 
@@ -52,17 +63,14 @@ function Exchange() {
     <Container >
 
       {/* Top image */}
-      <Box style={{
-        justifyContent: "center", alignItems: "center", marginRight: "auto", marginLeft: "auto",
-        marginTop: "2rem"
-      }}>
+      <Box style={{marginTop: "2rem"}}>
         <img src='/exchanging.png' alt='exchange' />
       </Box>
 
       {/* Top Select Menu and value */}
-      <Box>
+      <Box style={{marginTop: "2rem"}}>
         <InputLabel>สกุลเงิน</InputLabel>
-        <Select onChang={(e) => setSelectMenuTop(e.target.value) } value={selectMenuTop}>
+        <Select onChange={(e) => onChangeTopMenu(e) } value={selectMenuTop}>
           {menuState.map((menuList) => ( 
             <MenuItem key={menuList} value={menuList} > {menuList} </MenuItem>
           )
@@ -79,7 +87,7 @@ function Exchange() {
       {/* Top Select Menu and value */}
       <Box>
         <InputLabel>สกุลเงิน</InputLabel>
-        <Select onChange={(e)=>  setSelectMenuBottom(e.target.value) } value={selectMenuBottom}>
+        <Select onChange={(e)=> onChangeBottomMenu(e)  } value={selectMenuBottom}>
           {menuState.map((menuList) => (
             <MenuItem key={menuList} value={menuList}>{menuList}</MenuItem>
           )
